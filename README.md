@@ -55,8 +55,8 @@ Although, some of the technical solutions are not as thorough as they need to be
 Follow these steps to start up a working environment (it is assumed that this is running on a devs machine, and requirements such as Docker are already in position)
 
 Straight forward docker compose run;
-* Build the Spring Boot Jar using './gradew bootJar'
-* Run 'docker-compose -d'
+* Build the Spring Boot Jar using './gradlew bootJar'
+* Run 'docker-compose up -d'
 * View the API through the Swagger UI at http://localhost:8080/swagger-ui.html
 * To stop the containers - 'docker-compose stop'
 
