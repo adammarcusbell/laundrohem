@@ -101,6 +101,6 @@ If this was a real project, I would recommend the following tasks to tighten up 
 
 The use of a Postgres database was necessary due to the relational nature of the data model, however, as a result of using a reactive approach to the solution, the need for the relatively under-developed R2DBC was essential.  This library is less mature than the other reactive libraries that service databases such as Neo4J and Mongo.  This resulted in having to perform queries for nested objects manually.
 
-In hindsight it would have been more prudent to either use Neo4J (which I wanted to avoid due to its less than ubiquitous use), or adopt a more tradition MVC approach to the API which would have allowed for the use of more tried and tested ORM layers.
+In hindsight it would have been more prudent to either use Neo4J (which I wanted to avoid due to its less than ubiquitous use), or adopt a more traditional MVC approach to the API which would have allowed for the use of more tried and tested ORM layers.
 
 A more focused approach to the specific Laundry Room use case would have been beneficial, rather than attempting to create a generic Bookable that could be reused for other applications. Although, combining PoC/exploratory methods like this offer advantages in a real project with long terms aims.
