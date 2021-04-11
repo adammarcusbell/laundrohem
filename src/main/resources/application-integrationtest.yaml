@@ -1,0 +1,12 @@
+laundrohem:
+  postgres:
+    host: localhost
+    database: laundrohemdb
+    username: laundrohemdb
+    password: password
+
+spring:
+  liquibase:
+    url: jdbc:postgresql://localhost:5432/laundrohemdb
+    user: laundrohemdb
+    password: password

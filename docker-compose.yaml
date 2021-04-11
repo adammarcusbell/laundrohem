@@ -1,0 +1,26 @@
+version: '3.9'
+
+volumes:
+  postgresdb_volume:
+
+services:
+  laundrohemproc:
+    hostname: laundrohemproc
+    build: .
+    environment:
+      POSTGRES_HOST: 'laundrohempostgresdb'
+      POSTGRES_DATABASE: 'laundrohemdb'
+      POSTGRES_USERNAME: 'laundrohemdb'
+      POSTGRES_PASSWORD: 'password'
+    ports:
+      - "8080:8080"
+  laundrohempostgresdb:
+    hostname: laundrohempostgresdb
+    image: postgres
+    environment:
+      POSTGRES_USER: 'laundrohemdb'
+      POSTGRES_PASSWORD: 'password'
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresdb_volume:/var/lib/postgresql/data
