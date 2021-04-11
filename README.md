@@ -61,7 +61,7 @@ Straight forward docker compose run;
 * To stop the containers - 'docker-compose stop'
 
 To start the application via an IDE (allowing the stepping-through of the codebase);
-* Run 'docker-compose -d laundrohempostgresdb' to start the database
+* Run 'docker-compose up -d laundrohempostgresdb' to start the database
 * Then set the following Environment Variables in the IDE,
   *  POSTGRES_HOST = localhost
   *  POSTGRES_USERNAME=laundrohemdb
