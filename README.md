@@ -78,7 +78,7 @@ Once the application has been created (run once so that the tables have been cre
 
 To provide some kind of background to where my mind was going in regards to design decisions, initially I wanted to create something where an Appliance was bookable as well as the entire Laundry Room.  This granularity would have offered a better experience for the user, and a more efficient utilisation of the Appliances themselves.
 
-Interfaces are intended to have the potential to be serviced by different backend systems that provide more sophisticated state information in relation to the Appliance.
+Interfaces are intended to have the potential to be serviced by different backend systems that provide more sophisticated state information in relation to the Appliance; Samsung Smart Things and so on.
 
 ---
 **Initial things to do**
@@ -89,7 +89,7 @@ If this was a real project, I would recommend the following tasks to tighten up 
 * Use the status of the Booking - instead of simply deleting it mark it as CANCELLED
 * More tests for invalid input and non-standard scenarios
 * Exception Handling
-* More sophisticated querying of Bookings based on Booking query object  
+* More sophisticated querying of Bookings based on Booking query object - the skeletal ToDos are there but are not implemented.
 * Logging 
 * Unit Testing with Mocks
 * More comprehensive validation of input
